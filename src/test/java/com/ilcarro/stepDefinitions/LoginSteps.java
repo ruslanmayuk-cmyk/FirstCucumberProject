@@ -10,17 +10,21 @@ import static com.ilcarro.pages.BasePage.driver;
 public class LoginSteps {
 
 
+
     @And("User clicks on Login link")
     public void click_on_Login_link() {
+
 
         new HomePage(driver).clickOnLoginLink();
 
     }
+
     @And("User enters correct data")
     public void enters_correct_data() {
-        new LoginPage(driver).enterData("ruslanmayuk@gmail.com","qqqqWWWW1$");
+        new LoginPage(driver).enterData("ruslanmayuk@gmail.com", "qqqqWWWW1$");
 
     }
+
     @And("User clicks on Yalla button")
     public void clicks_on_Yalla() {
         new LoginPage(driver).clickOnYalla();
@@ -33,8 +37,18 @@ public class LoginSteps {
 
     }
 
-    @Then("User quits browser")
-    public void user_quits_browser() {
-        driver.quit();
+
+
+//    @And("User enters correct email and wrong password")
+//    public void enter_wrong_password(DataTable table) {
+//        new LoginPage(driver).enterWrongData(table);
+//
+//    }
+
+    @Then("User verifies Error message is displayed")
+    public void verify_Error(){
+        new LoginPage(driver).verifyMessage("Login or Password incorrect");
+
     }
+
 }

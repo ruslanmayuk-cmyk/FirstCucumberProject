@@ -39,4 +39,13 @@ public class LoginPage extends BasePage {
         assert shouldHaveText(messageText,message,5);
         return this;
     }
+
+//    public LoginPage enterWrongData(DataTable table) {
+//        List<Map<String,String>> dataTable = table.asMaps();
+//        String email = dataTable.get(0).get("email");
+//        String password = dataTable.get(0).get("password");
+//
+//        enterData(email, password);
+//        return  this;
+//    }
 }

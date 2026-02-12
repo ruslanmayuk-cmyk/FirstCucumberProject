@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomePage" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-12T17:43:50.463Z" hostname="DESKTOP-MJS02V5" time="5.189">
+  <properties/>
+  <testcase name="Verify HomePage title is displayed" classname="HomePage" time="5.188"/>
+  <system-out><![CDATA[
+@navigate
+?[1mScenario:?[22m Verify HomePage title is displayed       ?[90m# src/test/resources/features/navigate.feature:3?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser launches Chrome browser?[39m             ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.launch_Chrome_browser()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser opens ilcarro HomePage?[39m               ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.open_ilcarro_HomePage()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser verifies HomePage title is displayed?[39m ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.verify_HomePage_title()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser quits browser?[39m                         ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.quit_browser()?[39m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ruslan\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+]]></system-err>
+</testsuite>

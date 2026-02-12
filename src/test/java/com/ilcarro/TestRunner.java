@@ -8,8 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features",
         glue = "com/ilcarro/stepDefinitions",
-        tags = "@loginPositive",
-        plugin = {"pretty", "pretty", "json:build/cucumber-report/cucumber.java"})
+        tags = "@navigate",
+        plugin = {"pretty", "json:build/cucumber-report/cucumber.java"})
 
 
 public class TestRunner {

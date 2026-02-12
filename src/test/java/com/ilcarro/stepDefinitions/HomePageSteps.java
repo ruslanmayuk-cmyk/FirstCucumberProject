@@ -28,7 +28,7 @@ public class HomePageSteps {
 
     }
 
-    @And("And User quites browser")
+    @And("User quits browser")
     public void quit_browser() {
 
         new HomePage(driver).quitBrowser();

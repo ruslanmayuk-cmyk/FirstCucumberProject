@@ -14,6 +14,7 @@ public class HomePage extends BasePage{
     WebElement title;
 
     public HomePage isHomePageTitleDisplayed() {
+        getWait(20);
         assert  isElementVisible(title);
         return this;
     }

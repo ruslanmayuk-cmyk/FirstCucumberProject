@@ -13,17 +13,23 @@ dependencies {
     // Selenium
     implementation "org.seleniumhq.selenium:selenium-java:4.40.0"
 
+
     // Cucumber
-    testImplementation "io.cucumber:cucumber-java:7.34.2"
+    implementation "io.cucumber:cucumber-java:7.34.2"
     testImplementation "io.cucumber:cucumber-junit:7.34.2"
 
     // JUnit 4
-    testImplementation "junit:junit:4.13.2"
+    //testImplementation "junit:junit:4.13.2"
 
     // WebDriverManager
     implementation "io.github.bonigarcia:webdrivermanager:6.3.3"
+
+    // SLF4J Logger для тестов
+    testImplementation "org.slf4j:slf4j-simple:2.0.7"
 }
 
 test {
     useJUnit()
+    systemProperty "cucumber.filter.tags",
+    System.getProperty("cucumber.filter.tags")
 }
