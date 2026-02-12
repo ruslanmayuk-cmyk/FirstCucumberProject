@@ -2,6 +2,7 @@ package com.ilcarro.stepDefinitions;
 
 import com.ilcarro.pages.HomePage;
 import com.ilcarro.pages.LoginPage;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
@@ -39,11 +40,11 @@ public class LoginSteps {
 
 
 
-//    @And("User enters correct email and wrong password")
-//    public void enter_wrong_password(DataTable table) {
-//        new LoginPage(driver).enterWrongData(table);
-//
-//    }
+    @And("User enters correct email and wrong password")
+    public void enter_wrong_password(DataTable table) {
+        new LoginPage(driver).enterWrongData(table);
+
+    }
 
     @Then("User verifies Error message is displayed")
     public void verify_Error(){
