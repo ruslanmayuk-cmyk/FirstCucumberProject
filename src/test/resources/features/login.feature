@@ -8,4 +8,4 @@ Feature: Login
     And User enters correct data
     And User clicks on Yalla button
     Then User verifies Success message is displayed
-    And User quites browser
+    And User quits browser
